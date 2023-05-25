@@ -1,8 +1,8 @@
 {
-    "name": "mycareplanner",
+    "name": "eCarePlan",
     "version": "2.0.0",
     "private": true,
-    "homepage": "https://chronic-care.github.io/mycareplanner",
+    "homepage": "/",
     "dependencies": {
         "@emotion/react": "^11.8.2",
         "@emotion/styled": "^11.8.1",
