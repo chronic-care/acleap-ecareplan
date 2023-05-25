@@ -13,9 +13,12 @@ const cernerScopePilot = process.env.REACT_APP_CERNER_SANDBOX_ENDPOINT_SCOPE
 
 const nexgenScope = "launch launch/patient openid fhirUser offline_access patient/Patient.read patient/Practitioner.read patient/RelatedPerson.read patient/Condition.read patient/DiagnosticReport.read patient/Observation.read patient/Procedure.read patient/CarePlan.read patient/CareTeam.read patient/Goal.read patient/Immunization.read patient/MedicationRequest.read patient/Medication.read patient/Provenance.read patient/Organization.read"
 
-let iss = `${process.env.REACT_APP_ISS}`
-let clientId = `${process.env.REACT_APP_ISS_CLIENT_ID}`
-let scope = `${process.env.REACT_APP_ISS_SCOPE}`
+const iss = `${process.env.REACT_APP_ISS}`
+const clientId = `${process.env.REACT_APP_ISS_CLIENT_ID}`
+const scope = `${process.env.REACT_APP_ISS_SCOPE}`
+console.log("iss=" + iss)
+console.log("clientId=" + clientId)
+console.log("scope=" + scope)
 
 if (iss !== undefined && clientId !== undefined) {
     FHIR.oauth2.authorize({
