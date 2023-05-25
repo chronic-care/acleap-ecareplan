@@ -17,7 +17,7 @@ let iss = `${process.env.REACT_APP_ISS}`
 let clientId = `${process.env.REACT_APP_ISS_CLIENT_ID}`
 let scope = `${process.env.REACT_APP_ISS_SCOPE}`
 
-if (iss && clientId) {
+if (iss !== undefined && clientId !== undefined) {
     FHIR.oauth2.authorize({
         iss: iss,
         redirectUri: "./index.html",
